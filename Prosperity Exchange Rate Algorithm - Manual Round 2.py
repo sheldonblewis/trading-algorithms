@@ -10,7 +10,7 @@ for second in range(4):
         for fourth in range(4):
             for fifth in range(4):
                 value = rates[first][second] * rates[second][third] * rates[third][fourth] * rates[fourth][fifth] * rates[fifth][sixth]
-                if value >= max:
+                if value > max:
                     max = value
                     saved_max = [second, third, fourth, fifth]
 
